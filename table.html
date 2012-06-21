@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="All About Chinese Numbers.  Find Chinese equivalents to English numbers." />
+    <meta name="keywords" content="Chinese, Java, numbers, numerals, numerology, mathematics, shuzi, ten, one, zero, digits" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chinese Numbers</title>
+    <!--<base href="http://www.mandarintools.com/" />-->
+    <script src="./chineseNumbers.js" type="text/javascript"></script>
+</head>
+<body bgcolor="LIGHTYELLOW">
+    <center><h1>Chinese Numbers</h1></center>
+    <table align="CENTER" width="700" border="1" cellpadding="2">
+        <tr>
+            <td align="left" valign="top">
+                <b>Chinese/English Number(s)</b>
+            </td>
+            <td align="left" valign="top">
+                <b>Results:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea rows="10" cols="37" name="numbers"></textarea>
+            </td>
+            <td align="left" valign="top">
+                <span id="results">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="CENTER">
+                <button onclick="chineseNumerals.convert(document.getElementsByName('numbers')[0].value, document.getElementsByName('chinesetype')[0].value);">
+                    Convert!</button>
+                &nbsp;&nbsp;
+                <button onclick="clear();">
+                    Clear</button>
+                <!--<input type="reset" value="Clear" onclick="document.getElementById('results').innerHTML = '&nbsp;'; sf();" />-->
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Output English as:
+                <select name="englishtype">
+                    <option selected value="arabic">Arabic Numbers</option>
+                    <option value="comma">Arabic Numbers with commas</option>
+                    <option value="words">English Words</option>
+                </select>
+                &nbsp;&nbsp; Output Chinese as:
+                <select name="chinesetype">
+                    <!-- <OPTION SELECTED VALUE="gif"> Picture -->
+                    <option value="trad">Traditional</option>
+                    <option value="simp">Simplified</option>
+                    <option value="pinyin">Pinyin</option>
+                    <option value="formaltrad">Formal trad.</option>
+                    <option value="formalsimp">Formal simp.</option>
+                </select>
+                <!-- <br>
+<INPUT type="checkbox" name="usegif" value="on">Display Chinese with GIFs -->
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Type one Chinese or English number per line in the form above and click "Convert".
+                The equivalent number will appear in the Results area. You can also enter Chinese
+                by clicking on the Chinese numbers in the table below.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
